@@ -1,3 +1,4 @@
+![IMG_0079](https://user-images.githubusercontent.com/72002718/116692583-937dac80-a98a-11eb-8694-d586f76f1524.jpg)
 For this project, I will be creating a drinking game roulette. Whenever the user clicks on the start button, the roulett would spin and land on one game with a button on the right bottom corner. That button would choose who is going to start the drinking game. I would have about 12 games in total with simple illustration and tect (name of the game). 
 
 <img width="501" alt="Screen Shot 2021-04-30 at 7 43 55 AM" src="https://user-images.githubusercontent.com/72002718/116691031-44367c80-a988-11eb-99df-4ada9c859b33.png">
