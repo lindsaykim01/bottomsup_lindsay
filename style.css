@@ -1,6 +1,8 @@
 @font-face {
     font-family: "GlyphWorld-Meadow";
     src: url('GlyphWorld-Meadow.otf') format('opentype');
+    src: url('GlyphWorld-Meadow.woff') format('woff');
+    src: url('GlyphWorld-Meadow.ttf') format('truetype');
     font-style: normal;
 }
 
