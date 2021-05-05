@@ -1,5 +1,5 @@
 @font-face {
-    font-family: GlyphWorld-Meadow, GlyphWorld;
+    font-family: "GlyphWorld-Meadow";
     src: url('GlyphWorld-Meadow.otf') format('otf');
     font-style: normal;
 }
@@ -53,7 +53,7 @@ button{
 #title{
     width: auto;
     height: 50vh;
-    font-family:GlyphWorld-Meadow, GlyphWorld; 
+    font-family:GlyphWorld-Meadow; 
 
 }
 
