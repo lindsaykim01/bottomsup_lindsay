@@ -6,8 +6,14 @@
     font-style: normal;
 }
 
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
 #wrapper{
-
+    
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -15,6 +21,7 @@
     padding: 0%;
     margin: 0%;
     width: 100%;
+    height: 100%;
 
 }
 
@@ -22,7 +29,7 @@
     background-color: #7CC0FF;
     width: 100%;
     height: 100vh;
-    top: 50%;
+    top: 50vh;
     text-align: center;
 }
 
@@ -31,9 +38,19 @@ button{
     height: auto;
     font-size: 3vw;
     background-color: red;
-    font-family: GlyphWorld-Meadow, GlyphWorld;
+    font-family: GlyphWorld-Meadow;
+    color: white;
 
+}
 
+.start1{
+    margin-top: -30vh;
+}
+
+.inputbox{
+    width: 40vw;
+    height: 10vh;
+    margin: 2vh;
 }
 
 #name_insert{
@@ -48,25 +65,33 @@ button{
 }
 
 #name_info{
-    font-size: 20px;
+    font-size: 60px;
     color: white;
+    font-family: GlyphWorld-Meadow;
 }
 
 #title{
     width: auto;
     height: 50vh;
+    font-size: 112px;
+    color: white;
     font-family:GlyphWorld-Meadow; 
 
 }
 
 .random_game{
-    width: 50vw;
-    height: 50vh;
+    padding-top: 15vh;
+    height: 100vh !important;
+    width: auto;
 }
 
 .rg_text{
     width: auto;
     height: 10vw;
+    font-size: 60px;
+    text-align: center;
+    font-family: GlyphWorld-Meadow;
+    color: white;
 }
 
 .wrap{
@@ -82,25 +107,138 @@ button{
 
 #apt_wrap{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0%;
     margin: 0%;
     background-color: #419E20;
 }
 
 #point_wrap{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
   background-color: #FF4949;
 }
 
 #fd_wrap{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
     background-color: #FF7BF2;
 }
 
 #bang_wrap{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
     background-color: black ;
 }
 
+#rg5{    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(147, 64, 224);
+}
+
+#rg6{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(214, 187, 34);
+}
+
+#rg7{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(64, 75, 224);
+}
+
+#rg8{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(255, 147, 46);
+}
+
+#rg9{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(224, 64, 131);
+}
+
+#rg10{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(17, 133, 79);
+}
+
+
+
 #gamer{
-    font-size: 30px;
+    font-size: 50px;
+    font-family: GlyphWorld-Meadow;
     color: gold;
+    position: fixed;
+    z-index: 3;
+    text-align: center;
+    top: 80vh;
+    left: 50vw;
+}
+
+
+#replay{
+    position: fixed;
+    right: 10vw;
+    bottom: 10vh;
+}
+
+@media (max-width: 812px){
+    #title{
+        font-size: 60px;
+    }
+
+    button{
+        font-size: 40px;
+        width: 140px;
+    }
+
+    #name_info{
+        font-size: 30px;
+    }
+    .inputbox{
+        width: 300px;
+    }
+
+    .random_game{
+        height: 40vh !important;
+        width: 40vw  !important;
+    }
+
+    .rg_text{
+        font-size: 30px;
+    }
+
+    #replay{
+        bottom: 5vh;
+    }
+    
+    #replay button{
+        width: 200px;
+    }
+
+    .wrap{
+        height: 100vh;
+    }
 }

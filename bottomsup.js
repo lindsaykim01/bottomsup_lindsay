@@ -27,20 +27,14 @@ start2.addEventListener("click", event=> {
     name4 = document.getElementById("name4").value
 
     nameinsert.classList.add("hidden")
-    console.log(name1)
-    console.log(name2)
-    console.log(name3)
-    console.log(name4)
+
     bottomsup();
 })
 
-
-
+const replay = document.getElementById('replay');
+const showgamer = document.getElementById("gamer");
 
 function bottomsup (){
-
-    var show = 0;
-    var nextshow = 1;
 
     const game = document.getElementsByClassName("wrap")
 
@@ -50,6 +44,7 @@ function bottomsup (){
     var timeout = Math.floor(Math.random() * 100)
 
     var result = Math.floor(Math.random() * 4) +1;
+
     var gamer = "";
     if(result == 1){
         gamer = name1;
@@ -61,31 +56,63 @@ function bottomsup (){
         gamer = name4;
     }
 
+    
+
+    var div = document.createElement("div")
+    div.innerText = gamer;
+
 
     setInterval(() => {
         if(i== timeout){
-            clearInterval;
-            const showgamer = document.getElementById("gamer");
+            
+            console.log(gamer);
             showgamer.classList.remove("hidden")
-            showgamer.innerText = gamer;
-        
+            showgamer.append(div);
+
+            replay.classList.remove("hidden")
+
+            clearInterval;
 
         }else{
-            if(i%4 == 1){
+            if(i%10 == 1){
                 game[0].classList.remove("hidden")
-                game[3].classList.add("hidden")
+                game[9].classList.add("hidden")
                 i++
-            }else if(i%4 == 2){
+            }else if(i%10 == 2){
                 game[1].classList.remove("hidden")
                 game[0].classList.add("hidden")
                 i++
-            }else if(i%4 == 3){
+            }else if(i%10 == 3){
                 game[2].classList.remove("hidden")
                 game[1].classList.add("hidden")
                 i++
-            }else{
+            }else if(i%10 == 4){
                 game[3].classList.remove("hidden")
                 game[2].classList.add("hidden")
+                i++
+            }else if(i%10 == 5){
+                game[4].classList.remove("hidden")
+                game[3].classList.add("hidden")
+                i++
+            }else if(i%10 == 6){
+                game[5].classList.remove("hidden")
+                game[4].classList.add("hidden")
+                i++
+            }else if(i%10 == 7){
+                game[6].classList.remove("hidden")
+                game[5].classList.add("hidden")
+                i++
+            }else if(i%10 == 8){
+                game[7].classList.remove("hidden")
+                game[6].classList.add("hidden")
+                i++
+            }else if(i%10 == 9){
+                game[8].classList.remove("hidden")
+                game[7].classList.add("hidden")
+                i++
+            }else{
+                game[9].classList.remove("hidden")
+                game[8].classList.add("hidden")
                 i++
             }
         }
@@ -93,5 +120,15 @@ function bottomsup (){
     }, 100);
 
 
-
 }
+
+replay.addEventListener("click" , event=> {
+    var gamers = showgamer.children;
+    for( var i =0; i<gamers.length; i++){
+        gamers[i].classList.add("hidden")
+    }
+
+    showgamer.classList.add("hidden");
+    replay.classList.add("hidden");
+    bottomsup();
+})
