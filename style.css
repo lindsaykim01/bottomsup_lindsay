@@ -47,6 +47,8 @@ button{
 #title{
     width: auto;
     height: 50vh;
+    font-family:GlyphWorld-Meadow, GlyphWorld; 
+    src: url('/GlyphWorld-Meadow.otf') format('otf');
 }
 
 .random_game{
